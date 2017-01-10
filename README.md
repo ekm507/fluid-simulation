@@ -1,2 +1,2 @@
 # fluid-simulation
-fluid state siulation using kinda-newton dynamics. with a micro-macroscopic approach.
+fluid state smiulation using kinda-newton dynamics. with a micro-macroscopic approach.
