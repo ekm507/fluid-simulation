@@ -5,4 +5,5 @@
 #define position_type double
 // position type (x or y)
 #define friction_type unsigned double
-//type for friction coefficient. 
+//type for friction coefficient.
+ 
