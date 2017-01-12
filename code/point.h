@@ -1,5 +1,7 @@
 //define point properties and functuins.
 
+#include "types.h"
+
 class point
 {
 	position_type x;

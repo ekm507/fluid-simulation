@@ -1,6 +1,7 @@
 //define atom properties and functions.
 
 #include "types.h"
+#include "point.h"
 
 class atom
 {
