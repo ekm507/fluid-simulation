@@ -1,12 +1,16 @@
-//define point properties and functuins.
+//define point/vector properties and functuins.
 
 #include "types.hpp"
 
+
+//used to define variables with (x,y)
+//used for locating objects, and defining vectors.
+//so a vector can be as point type.
 class point
 {
 	public:
-		position_type x;
-		position_type y;
+		vary_type x;
+		vary_type y;
 //TODO		point point(position_type, position_type);
 };
 
@@ -17,12 +21,27 @@ class point
 	return self;
 }*/
 
+
+//function below returns dot product of two vectors.
+/*
+
+[x]
+| | . [a  b] = ax+by.
+[y]
+
+*/
 vary_type point_dot_product(point a, point b)
 {
 	return a.x*b.x + a.y*b.y;
 }
 
 
+//function below returns a vector produced by a coefficient number.
+/*
+
+n . [a   b] = [na  nb]
+
+*/
 point point_numeral_product(vary_type n, point p)
 {
 	point resault;
@@ -31,6 +50,13 @@ point point_numeral_product(vary_type n, point p)
 	return resault;
 }
 
+
+//function below returns minus of two vectors.
+/*
+
+   [a  b] - [x  y] = [ (a-x)   (b-y) ]
+
+*/
 point point_minus(point a, point b)
 {
 	point resault;
@@ -38,3 +64,5 @@ point point_minus(point a, point b)
 	resault.y=a.y-b.y;
 	return resault;
 }
+
+
